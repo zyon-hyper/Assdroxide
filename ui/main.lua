@@ -10,6 +10,8 @@ if oh.Cache["ui/main"] then
 	return Interface
 end
 
+print("passed ui/main")
+
 import("ui/controls/TabSelector")
 local MessageBox, MessageType = import("ui/controls/MessageBox")
 
