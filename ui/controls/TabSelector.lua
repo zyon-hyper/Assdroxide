@@ -15,8 +15,7 @@ local requiredMethods = {
     UpvalueScanner = import("modules/UpvalueScanner").RequiredMethods,
     ScriptScanner = import("modules/ScriptScanner").RequiredMethods,
     ModuleScanner = import("modules/ModuleScanner").RequiredMethods,
-    ClosureSpy = import("modules/ClosureSpy").RequiredMethods,
-    RemoteSpy = loadstring(game:HttpGet("https://raw.githubusercontent.com/zyon-hyper/Assdroxide/refs/heads/revision/modules/RemoteSpy.lua"))().RequiredMethods
+    ClosureSpy = import("modules/ClosureSpy").RequiredMethods
 }
 
 print("Passed the error")
