@@ -4,6 +4,8 @@ local HttpService = game:GetService("HttpService")
 
 local Interface = import("rbxassetid://11389137937")
 
+print("Inside of main.lua")
+
 if oh.Cache["ui/main"] then
 	return Interface
 end
