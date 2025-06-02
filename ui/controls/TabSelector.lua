@@ -1,5 +1,7 @@
 local TweenService = game:GetService("TweenService")
 
+print("Start of TabSelector")
+
 local TabSelector = {}
 
 local Base = import("rbxassetid://11389137937").Base
@@ -14,8 +16,10 @@ local requiredMethods = {
     ScriptScanner = import("modules/ScriptScanner").RequiredMethods,
     ModuleScanner = import("modules/ModuleScanner").RequiredMethods,
     ClosureSpy = import("modules/ClosureSpy").RequiredMethods,
-    RemoteSpy = import("modules/RemoteSpy").RequiredMethods
+    RemoteSpy = loadstring(game:HttpGet("https://raw.githubusercontent.com/zyon-hyper/Assdroxide/refs/heads/revision/modules/RemoteSpy.lua"))().RequiredMethods
 }
+
+print("Passed the error")
 
 local constants = {
     fadeLength = TweenInfo.new(0.15),
